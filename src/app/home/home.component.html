@@ -1,0 +1,32 @@
+<div class="table-responsive">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Prise</th>
+                <th>Rating</th>
+                <th>Stock</th>
+                <th>Brand</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let items of item.products">
+                <td>{{items.id}}</td>
+                <td>{{items.title}}</td>
+                <td>{{items.description}}</td>
+                <td>{{items.price}}</td>
+                <td>{{item.rating}}</td>
+                <td>{{items.stock}}</td>
+                <td>{{items.brand}}</td>
+                <td>{{items.category}}</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+</div>
